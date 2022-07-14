@@ -1,0 +1,51 @@
+.sidenav {
+    position: absolute;
+    z-index: 5;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(46, 45, 45);
+}
+
+.sidenav ul {
+    width: 100%;
+    height: 60vh;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    color: white;
+}
+
+.sidenav ul li {
+    cursor: pointer;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.sidenav ul li:hover {
+    background-color: dodgerblue;
+}
+
+.sidenav ul li a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (min-width:320px){
+    .sidenav {
+        width: 50vw;
+        border-right: 2px solid white;
+    }
+}

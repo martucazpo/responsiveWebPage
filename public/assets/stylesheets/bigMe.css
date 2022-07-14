@@ -1,0 +1,66 @@
+#meMeMeDiv {
+    background-color: inherit;
+}
+
+.bgMe {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "fig2 art1"
+    "fig2 fig1"
+    "art2 fig3";
+    padding-bottom: 8vh;
+}
+
+.bm-figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bm-img {
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+
+.fig-1 {
+    grid-area: fig1;
+}
+.fig-2 {
+    grid-area: fig2;
+    background-color: rgb(248, 206, 151);
+    padding: 0 1em;
+    border-radius: 1em;
+}
+.fig-3 {
+    grid-area: fig3;
+}
+
+.article1{
+    grid-area: art1;
+    padding-right: 1em;
+}
+.article2{
+    grid-area: art2;
+    padding-left: 1em;
+}
+
+
+@media only screen and (min-width: 1250px){
+    .bgMe {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "fig2 art1 fig1"
+    "fig2 art2 fig3";
+    }
+
+    .article2{
+      padding-left: 0;  
+    }
+
+    .article1{
+        padding-right: 0;
+    }
+}

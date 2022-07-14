@@ -1,0 +1,51 @@
+
+#businessContentDiv {
+    width:100vw; 
+    height: fit-content;
+    overflow: scroll;  
+    background-color: inherit;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+.smb-container {
+    width: 100vw;
+    padding:1em 1em 5vh 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.smb-fig{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sb-img {
+    max-width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.smb-article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(184, 181, 178);
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+@media only screen and (min-width:500px){
+    .smb-fig {
+        width: 80%;
+    }
+}

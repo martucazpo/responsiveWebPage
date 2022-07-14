@@ -1,0 +1,88 @@
+
+.portrait-gallery {
+    padding: 1em 1em;
+    max-width: 98%;
+    height: 75vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "one two three  four five eight"
+    "one six seven nine ten eight";
+    gap: 1em;
+}
+
+.frame1 {
+    grid-area: one;
+    border-radius: 0.75em;
+}
+.frame2 {
+    grid-area: two;
+}
+.frame3 {
+    grid-area: three;
+}
+.frame4 {
+    grid-area: four;
+}
+.frame5 {
+    grid-area: five;
+}
+.frame6 {
+    grid-area: six;
+}
+.frame7 {
+    grid-area: seven;
+}
+.frame8 {
+    grid-area: eight;
+    border-radius: 0.75em;
+}
+.frame9 {
+    grid-area: nine;
+}
+.frame10 {
+    grid-area: ten;
+}
+
+.portrait-frame {
+    /* width: 10vw; */
+    background-color: black;
+    /* height: fit-content; */
+    /* margin: 1em; */
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portrait {
+    width: 90%;
+    height: 90%;
+    background-color: rgb(22, 22, 22);
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+}
+
+.portrait-img {
+    width: 100%;
+}
+
+.portrait-caption {
+    margin-top: 1em;
+}
+
+.portrait-caption a {
+    text-decoration: none;
+    height: 1em;
+    color: white;
+    cursor: pointer;
+}
+
+.portrait-caption a:hover {
+    color: dodgerblue;
+}

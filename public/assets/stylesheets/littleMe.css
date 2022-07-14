@@ -1,0 +1,39 @@
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+#meMeMeDiv {
+    background-color: inherit;
+}
+
+.lm-container {
+    width: 100vw;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 1em 5vh 1em;
+}
+
+.lm-figure {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lm-img {
+    max-width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.lm-article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
